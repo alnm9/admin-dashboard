@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    background-color: rgb(27, 26, 26)
+}
+
+.container {
+    margin: 0 auto;
+    height: 100%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    grid-row: 1/3;
+    background-color: blue;
+}
+
+.header {
+    background-color: aliceblue;
+}
+
+.content {
+    background-color: rgb(190, 182, 182);
+}

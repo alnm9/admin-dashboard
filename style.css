@@ -28,14 +28,15 @@ body {
     gap: 55px;
     font-size: 30px;
     font-weight: bold;
-    padding: 2em;
+    padding: 1em;
     padding-top: 20px;
     color: rgb(255, 255, 255);
 }
 
-.sidebar>p {
+.sidebar>div {
     font-size: 40px;
 }
+
 
 .sidebar>ul>li {
     margin-bottom: 30px;
@@ -48,3 +49,37 @@ body {
 .content {
     background-color: rgb(190, 182, 182);
 }
+
+.dashboard {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+ul>li {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+img {
+    display: inline-block;
+    object-fit: contain;
+    height: 32px;
+}
+
+.dashboard img {
+    height: 60px;
+}
+
+/* .dashboard::before {
+    content: url("view-dashboard.svg");
+    display: block;
+    width: 30px;
+    height: 30px;
+} */

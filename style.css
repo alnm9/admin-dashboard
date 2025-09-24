@@ -77,9 +77,84 @@ img {
     height: 60px;
 }
 
-/* .dashboard::before {
-    content: url("view-dashboard.svg");
-    display: block;
-    width: 30px;
-    height: 30px;
-} */
+.header {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.up-head {
+    background-color: aqua;
+    padding: 1em 4em 0 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+}
+
+
+.up-right,
+.up-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.up-right {
+    gap: 45px;
+}
+
+.up-right p {
+    font-size: 27px;
+    font-weight: bold;
+    padding-right: 25px;
+}
+
+.up-right button {
+    background-color: transparent;
+    border: none;
+}
+
+.up-right button,
+#btn-ntf {
+    height: 34px;
+    width: 34px;
+}
+
+#up-img1 {
+    height: 60px;
+}
+
+.up-left button {
+    background-color: transparent;
+    border: none;
+
+}
+
+.up-left button,
+#btn-search {
+    height: 33px;
+    width: 33px;
+}
+
+.up-left button,
+.up-right button:hover {
+    cursor: pointer;
+}
+
+.up-left input {
+    width: 750px;
+    height: 42px;
+    font-size: large;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(205, 226, 236);
+}
+
+.up-left input:focus {
+    outline: 1.5px solid rgb(149, 178, 241);
+}
+
+.down-head {
+    background-color: aquamarine;
+}

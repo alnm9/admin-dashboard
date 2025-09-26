@@ -190,3 +190,49 @@ img {
     font-size: 22px;
     font-weight: bold;
 }
+
+#btns-head:hover {
+    cursor: pointer;
+    background-color: rgb(7, 124, 192);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+
+    gap: 40px;
+    padding: 50px 45px 80px 40px;
+}
+
+.content-p {
+    grid-row: 1/3;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.content-p>p,
+.content-a>p,
+.content-t>p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.projects>div,
+.content-a>div,
+.content-t>div {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.content-a,
+.content-t,
+.content-p {
+    display: grid;
+    grid-template-rows: 45px 1fr;
+}

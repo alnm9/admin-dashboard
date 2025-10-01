@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-
+    box-sizing: border-box;
 }
 
 body {
@@ -207,6 +207,7 @@ img {
 
 .content-p {
     grid-row: 1/3;
+    /* z-index: 2; */
 }
 
 .projects {
@@ -227,7 +228,7 @@ img {
 .content-t>div {
     background-color: white;
     border: none;
-    border-radius: 15px;
+    border-radius: 13px;
 }
 
 .content-a,
@@ -235,4 +236,25 @@ img {
 .content-p {
     display: grid;
     grid-template-rows: 45px 1fr;
+}
+
+
+.card {
+    position: relative;
+    overflow: hidden;
+    padding: 25px 50px 50px 50px;
+}
+
+.card>p {
+    font-size: 21px;
+    margin-top: 5px;
+}
+
+.line {
+    height: 100%;
+    width: 2%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: 0;
 }

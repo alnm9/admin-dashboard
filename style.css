@@ -43,7 +43,7 @@ body {
 }
 
 .content {
-    background-color: rgb(190, 182, 182);
+    background-color: rgb(214, 224, 235);
 }
 
 .dashboard {
@@ -106,7 +106,8 @@ img {
     text-wrap: nowrap;
 }
 
-.up-right button {
+.up-right button,
+.up-left button {
     background-color: transparent;
     border: none;
 }
@@ -121,10 +122,6 @@ img {
     height: 60px;
 }
 
-.up-left button {
-    background-color: transparent;
-    border: none;
-}
 
 .up-left button,
 #btn-search {
@@ -213,6 +210,7 @@ img {
 .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 40px;
 }
 
@@ -242,12 +240,21 @@ img {
 .card {
     position: relative;
     overflow: hidden;
-    padding: 25px 50px 50px 50px;
+    padding: 40px 50px 35px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.card>p {
-    font-size: 21px;
+.card-text>h2 {
+    font-size: 25px;
+}
+
+.card-text>p {
+    font-size: 22px;
     margin-top: 5px;
+    color: rgb(109, 109, 109);
+    line-height: 1.1;
 }
 
 .line {
@@ -257,4 +264,19 @@ img {
     position: absolute;
     left: 0;
     top: 0;
+}
+
+.card-img {
+    display: flex;
+    align-self: end;
+    gap: 35px;
+}
+
+.card-img>button {
+    background-color: transparent;
+    border: none;
+}
+
+.card-img>button:hover {
+    cursor: pointer;
 }
